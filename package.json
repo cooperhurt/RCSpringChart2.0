@@ -1,0 +1,22 @@
+{
+    "name": "server_tipout",
+    "version": "1.0.0",
+    "description": "This is a server tipout software that will keep track of server tips, and let servers/owners run reports about these numbers.",
+    "private": "true",
+    "scripts": {
+        "setup": "concurrently \"cd ui && npm i\" && \"cd api npm i\"",
+        "start": "concurrently \"cd ui && npm start\" && \"cd api npm start\"",
+        "test": "concurrently \"cd ui && npm test\" && \"cd api npm test\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://cooperhurt@dev.azure.com/cooperhurt/ServerTipout/_git/ServerTipout"
+    },
+    "author": "Cooper Hurt",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^5.3.0",
+        "lodash": "^4.17.20",
+        "material-table": "^1.69.1"
+    }
+}
